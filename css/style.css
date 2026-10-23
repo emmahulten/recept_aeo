@@ -1,0 +1,91 @@
+:root {
+    --primary-color: #762634;
+    --secondary-color: #475b49;
+    --background-color: #f5e9db;
+    --surface-color: #fef4e9;
+    --accent-color: #d5ad79;
+
+    --text-color: #2b2b2b;
+    --text-on-primary:#dda8a6;
+}
+
+/* 2. Grundregler */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Arial', sans-serif;
+}
+
+section {
+    padding: 30px;
+
+}
+
+.recept {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+}
+
+article {
+    grid-column: 2;
+    padding: 15px;
+}
+
+a {
+    color: inherit; 
+}
+
+.button {
+    display: inline-block; 
+    background-color: var(--primary-color);
+    color: var(--text-on-primary);
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 30px; 
+    transition: 0.5s;
+}
+
+/* section {
+    margin: 20px;
+    padding: 30px;
+    background-color: var(--surface-color);
+}
+ */
+.button:hover {
+    text-decoration: underline;
+}
+
+
+
+
+h1 {
+    grid-column: 2;
+    text-align: center;
+    color: var(--text-on-primary);
+}
+
+h2 {
+    text-align: center;
+}
+
+h4 {
+    text-decoration: underline;
+}
+
+/* 3. Header och navigation */
+
+header {
+    background-color: var(--primary-color);
+    padding: 20px;
+    color: var(--text-on-primary);
+
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    position: relative;
+}
